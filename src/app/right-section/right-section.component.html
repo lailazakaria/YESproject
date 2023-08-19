@@ -1,0 +1,15 @@
+<div class="icon" [class.active]="isActive ==='settings'">
+    <img src="../../assets/icon/settings.png" (click)="toggleActive('settings')">
+</div>
+<div class="icon" [class.active]="isActive==='home'">
+    <img src="../../assets/icon/myHome.png" routerLink="/home" (click)="toggleActive('home')">
+</div>
+<div class="icon" [class.active]="isActive==='Alerts'">
+    <img src="../../assets/icon/Alerts.png" (click)="toggleActive('Alerts')">
+</div>
+<div class="icon" [class.active]="isActive==='profile'">
+    <img src="../../assets/icon/myProfile.png" routerLink="profile" (click)="toggleActive('profile')">
+</div>
+<div class="icon">
+    <img src="../../assets/icon/info.png" routerLink="profile">
+</div>

@@ -1,0 +1,12 @@
+.icon {
+      margin-bottom: 4rem;
+      cursor: pointer;
+  padding: 5px 5px;
+
+ }
+ .icon.active {
+  border-radius: 50%;
+  background-color: #b9b9d5;
+
+}
+        

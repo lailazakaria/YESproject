@@ -20,10 +20,27 @@ export class ProfileComponent {
     //an other way
     // this.data = this.dataService.getAllData();
   }
-  showLeftSection = false;
+  currentPage = 1;
+  itemsPerPage = 10;
 
+  showLeftSection = false;
   toggleLeftSection() {
     this.showLeftSection = !this.showLeftSection;
   }
-
+  paginateData() {
+    const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+    const endIndex = startIndex + this.itemsPerPage;
+    return this.data.slice(startIndex, endIndex);
+  }
+  nextPage() {
+    const totalPages = Math.ceil(this.data.length / this.itemsPerPage);
+    if (this.currentPage < totalPages) {
+      this.currentPage++;
+    }
+  }
+  previousPage() {
+    if (this.currentPage > 1) {
+      this.currentPage--;
+    }
+  }
 }

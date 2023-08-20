@@ -1,10 +1,15 @@
 .icon {
       margin-bottom: 4rem;
       cursor: pointer;
-  padding: 5px 5px;
+      padding: 0.3rem 0.3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
  }
  .icon.active {
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   background-color: #b9b9d5;
 
